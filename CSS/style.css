@@ -75,15 +75,14 @@ header {
     font-weight: bold;
     margin-bottom: 150px;
 }
-.first-v-title::after {
+.first-v-title::after { /* !!!!!!!!!!!!!! */
     display: block;
     content: "";
     margin: 20px auto 0;
     width: 100px;
     border-bottom: 1px solid #fff;
-    
 }
-.first-v-btn {
+.first-v-btn { /* !!!!!!!!!!!!!! */
     display: inline-block;
     line-height: 50px;
     width: 200px;
@@ -92,9 +91,10 @@ header {
     font-weight:bold;
     border:none;
     font-size: 15px;
+    /* !!!!!!!!!!!!!! */
     background: linear-gradient(90deg,#06BEB6,#1A719A,#283C86);
-    border-radius: 5px;
     box-shadow: 0 5px #070707;
+    border-radius: 5px;
     color: #fff;
 }
 .fa-door-open{
@@ -102,8 +102,112 @@ header {
 }
 /* about
 -----------------------------------------------------------------*/
+#about{
+    color:#191919;
+    background-color:#F8F8F8;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+.title {
+    /* 擬似要素とtitleを横並びに */
+    display:flex;
+    padding-bottom:60px;
+    /* 要素全体を横方向に中央揃え */
+    justify-content: center;
+    /* 線を文字の縦方向に中央揃え */
+    align-items: center;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+.title-b{
+    /* Aboutの部分だけを太文字に */
+    font-weight: bold;
+}
+.title::before, .title::after {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    border-bottom: 1px solid #191919;
+}
+.title::before {
+    margin-right: 20px;
+}
+.title::after {
+    margin-left: 20px;
+}
+
+.about-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 47px;
+    column-gap: 100px;
+}
+.about-item {
+    width: calc((100% - 200px) / 3);
+    padding:35px 50px 50px;
+    text-align: center;
+    background-color: #fff;
+}
+.about-title__title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.about-item__img{
+    margin:20px auto 25px;
+    width:122px;
+    height:122px;
+}
+.about-item__img img{
+    width:100%;
+}
+.about-item__desc{
+    font-size: 13px;
+}   
 /* news
 -----------------------------------------------------------------*/
+#news{
+    background-image: url("../img/bg2.png");
+    background-size:cover;
+}
+.white-title{
+    color:#fff;
+}
+#news .title::before, #news .title::after {
+    border-bottom: 1px solid #fff;
+} 
+.news-wrap{
+    display:flex;
+    justify-content: space-between;
+}
+.news-item {
+    width: calc((100% - 92px) / 3);
+}
+.news-img img {
+    width: 100%;
+}
+.news-content{
+    padding:20px;
+    background-color:#fff;
+}
+.news-date{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.news-title{
+    padding:8px 0 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.news-txt{
+    font-size: 12px;
+}
 /* entry
 -----------------------------------------------------------------*/
 .entry-wrap{
