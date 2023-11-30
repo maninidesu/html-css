@@ -53,11 +53,76 @@ header {
     font-size: 15px;
 }
 
-
-
 /* main
 -----------------------------------------------------------------*/
-
+/* first-view
+-----------------------------------------------------------------*/
+#first-v {
+    background-image: url("../img/bg1.png");
+    background-size: cover;
+    height: 770px;
+    color: #fff;
+    position: relative;
+}
+.first-v-wrap {
+    max-width: 250px;
+    margin: auto;
+    padding:285px 0 255px;
+    text-align: center;
+}
+.first-v-title {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 150px;
+}
+.first-v-title::after {
+    display: block;
+    content: "";
+    margin: 20px auto 0;
+    width: 100px;
+    border-bottom: 1px solid #fff;
+    
+}
+.first-v-btn {
+    display: inline-block;
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-weight:bold;
+    border:none;
+    font-size: 15px;
+    background: linear-gradient(90deg,#06BEB6,#1A719A,#283C86);
+    border-radius: 5px;
+    box-shadow: 0 5px #070707;
+    color: #fff;
+}
+.fa-door-open{
+    margin-right:4px;
+}
+/* about
+-----------------------------------------------------------------*/
+/* news
+-----------------------------------------------------------------*/
+/* entry
+-----------------------------------------------------------------*/
+.entry-wrap{
+    padding:175px 0;
+    width:400px;
+    margin:0 auto;
+    text-align: center;
+}
+.entry-title{
+    margin-bottom:55px;
+    font-weight:bold;
+    font-size:18px;
+    color:#191919;
+}
+.entry-btn {
+    width: 320px;
+}
+/* contact
+-----------------------------------------------------------------*/
 
 
 
