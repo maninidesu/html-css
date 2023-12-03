@@ -227,10 +227,71 @@ header {
 }
 /* contact
 -----------------------------------------------------------------*/
+#contact {
+    background-image: url("../img/bg3.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+#contact .title::before, #contact .title::after {
+    border-color:#fff;
+} 
+.contact-wrap{
+    width:600px;
+    margin:0 auto;
+}
+.contact-caution{
+    margin:0 0 25px;
+    font-size: 15px;
+}
 
+input,select,textarea{
+    width:100%;
+    border-radius:7px;
+    padding:15px;
+}
+input,select{
+    height:55px;
+}
+textarea{
+    height:185px;
+}
+select{
+    appearance:none;
+}
+.contact-box:nth-of-type(3){
+    position:relative;
+}
+.contact-box:nth-of-type(3)::after{
+    position:absolute;
+    background-image: url("../img/arrow.png");
+    background-size:100%;
+    display:block;
+    content:"";
+    width:15px;
+    height:15px;
+    top:60%;
+    right:20px;
+}
 
-
-
+.contact-box{
+    margin-bottom:33px;
+}
+.contact-box:not(:nth-of-type(4)){
+    margin-bottom:33px;
+}
+.contact-text{
+    margin-bottom:10px;
+    font-size: 15px;
+}
+.red{
+    color:red;
+    margin-left:8px;
+}
+.caution-red{
+    margin-left:0;
+    margin-right:8px;
+}
 /* footer
 -----------------------------------------------------------------*/
 footer {
@@ -244,4 +305,17 @@ footer {
     font-weight:bold;
     font-size:12px;
     color:#fff;
+}
+.bg {
+    border-radius: 4px;
+    background-image: -moz-linear-gradient( 0deg, rgb(1,1,1) 50%, rgb(57,57,57) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(1,1,1) 50%, rgb(57,57,57) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(1,1,1) 50%, rgb(57,57,57) 100%);
+    box-shadow: 0px 3px 7px 0px rgba(51, 51, 51, 0.5);
+    position: absolute;
+    left: 143px;
+    top: 448px;
+    width: 300px;
+    height: 60px;
+    z-index: 6;
 }
