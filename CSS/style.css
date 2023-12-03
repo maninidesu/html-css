@@ -36,7 +36,7 @@ header {
     padding:0 20px;
     color: #fff;
     background-color: inherit;
-    position: fixed;
+    position: absolute;
     z-index:10;
 }
 
